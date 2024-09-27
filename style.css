@@ -1,0 +1,9 @@
+input, select{
+    display: block;
+    margin-bottom: 10px;
+}
+
+.error{
+    color: brown;
+    display: block;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Person Example</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="https://unpkg.com/tabulator-tables@6.2.5/dist/css/tabulator.min.css" rel="stylesheet">
+</head>
+<body>
+    
+    <h1>Person</h1>
+
+    <form onsubmit="createPerson()">
+        <label>Name</label>
+        <input type="text" id="inputName" required>
+
+        <lable>Age</lable>
+        <input type="number" id="inputAge" min="18">
+
+        <lable>Role</lable>
+        <span id="errorRole" class="error"></span>
+        <select id="inputRole">
+            <option value="">Select Option</option>
+            <option value="Teacher" >Teacher</option>
+            <option value="Student" >Student</option>
+        </select>
+
+        <label>Grade</label>
+        <span id="errorGrade" class="error"></span>
+        <input id="inputGrade" type="number">
+
+        <lable>Subject</lable>
+        <span id="errorSubject" class="error"></span>
+        <input id="inputSubject" type="text">
+        
+        <button>Send</button>
+    </form>
+
+    <div id="outputTeachers"></div>
+
+    <div id="outputStudent"></div>
+
+    <script type="module" src="main.js"></script>
+</body>
+</html>
